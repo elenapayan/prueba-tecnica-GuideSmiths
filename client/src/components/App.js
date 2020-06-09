@@ -24,7 +24,6 @@ class App extends React.Component {
 
   renderPhoneDetail(props) {
     if (this.state.phoneStore) {
-      console.log(props.match.params.id);
       const routeId = parseInt(props.match.params.id);
       const phone = this.state.phoneStore.find(phone => phone.id === routeId);
       if (phone) {
@@ -34,9 +33,8 @@ class App extends React.Component {
       } else {
         const route = '/';
         return (
-          <div>
-            <p>No disponible</p>
-            <Link to={route}>Volver a la home</Link>
+          <div className="app-link">
+            <Link to={route}><span>&lt;</span> Back home</Link>
           </div>
         );
       }
@@ -48,7 +46,6 @@ class App extends React.Component {
   }
 
   render() {
-    console.log(this.state.phoneStore);
     return (
       <React.Fragment>
         <Switch>

@@ -8,9 +8,9 @@ function PhoneDetails(props) {
     return (
         <React.Fragment>
             <div className="details-container">
-                <Link to="/"><span>&lt;</span> Volver</Link>
+                <Link to="/"><span>&lt;</span> Back</Link>
                 <div className="card-container">
-                    <div>
+                    <div className="image-container">
                         <img className="card-image" src={image} alt={name} />
                     </div>
                     <div className="info-container">

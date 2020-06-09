@@ -1,8 +1,10 @@
 
   .phone-container {
     width: 250px;
+    height: 400px;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     align-items: center;
     border: solid silver 5px;
     border-radius: 5px;
@@ -18,7 +20,7 @@
   }
   .phone-container-image {
     width: 230px;
-    height: 265px;
+    max-height: 265px;
     display: flex;
     justify-content: center;
     background: whitesmoke;
@@ -28,7 +30,7 @@
   }
   .phone-image {
     max-width: 230px;
-    max-height: 265px;
+    overflow: hidden;
   }
   .phone-text {
    font-size: 15px;
