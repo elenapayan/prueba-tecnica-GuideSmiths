@@ -1,0 +1,39 @@
+
+  .phone-container {
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: solid silver 5px;
+    border-radius: 5px;
+    text-align: center;
+    margin: 15px;
+    padding: 10px;
+    background: whitesmoke;
+  }
+  .phone-container:hover {
+    border: 10px solid rgba(230, 230, 235, 0.877);
+    box-shadow: 5px 5px 50px rgb(241, 239, 243);
+    transform: scale(1.1);
+  }
+  .phone-container-image {
+    width: 230px;
+    height: 265px;
+    display: flex;
+    justify-content: center;
+    background: whitesmoke;
+  }
+  .phone-container-text {
+    width: 225px;
+  }
+  .phone-image {
+    max-width: 230px;
+    max-height: 265px;
+  }
+  .phone-text {
+   font-size: 15px;
+   line-height: 25px;
+  }
+  .phone-title {
+    line-height: 40px;
+  }

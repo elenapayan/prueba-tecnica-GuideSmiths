@@ -1,9 +1,10 @@
 import React from 'react';
+import '../sytlesheets/PhoneList.css';
 import PhoneCard from './PhoneCard';
 
 function PhoneList(props) {
     return (
-        <ul>{props.phones.map((phone, key) => {
+        <ul className="list-container">{props.phones.map((phone, key) => {
             return (
                 <PhoneCard
                     key={key}
